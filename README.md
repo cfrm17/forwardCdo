@@ -2,7 +2,7 @@
 
 
 
-The forward starting CDO (FSCDO) valuation model serves the purpose of pricing a forward starting CDO (FSCDO) tranche. An FSCDO trade is defined as an agreement to enter into a CDO trade at some time in the future. Unlike a usual forward starting instrument in the interest rate world, the obligors in the collateral pool of the FSCDO may default before the forward starting date, which makes the pricing of such trades complicated. Furthermore, the FSCDO involves the forward start date and the trade maturity; hence a pertinent valuation model (see https://finpricing.com/lib/FiBond.html) needs to be calibrated to the market implied correlation information with a full term structure.
+The forward starting CDO (FSCDO) valuation model serves the purpose of pricing a forward starting CDO (FSCDO) tranche. An FSCDO trade is defined as an agreement to enter into a CDO trade at some time in the future. Unlike a usual forward starting instrument in the interest rate world, the obligors in the collateral pool of the FSCDO may default before the forward starting date, which makes the pricing of such trades complicated. Furthermore, the FSCDO involves the forward start date and the trade maturity; hence a pertinent valuation model needs to be calibrated to the market implied correlation information with a full term structure.
 
 In the past three years the structured credit derivative modeling has witnessed the emergence of the vanilla CDO trades pricing using market implied correlation information, and the standardization of the normal copula model within the base correlation framework.  The occurrence of the more complicated structure, such as the FSCDO trade discussed in this report, leads to alternative ways of explaining the correlation information implied by the market standard iTraxx and CDX indices.  In the initial modeling approach, a copula is normally assumed first, for example normal copula, t copula, etc. The random factor loading approach relaxes this assumption to some extent by assuming the factor as a function of the latent variable hence the joint marginal distribution is no longer normal. The latest development moves even further. As proposed by several authors, a non-parametric modeling framework is employed to match the market information. For example, in the perfect copula model, the assumption of any copula form is dropped, and the copula function itself is implied by the market information. In the Gaussian mixture model, three correlation values and their corresponding weights are found to match five market quotations of an iTraxx or CDX index.
 
@@ -155,4 +155,7 @@ In the model the default choices of the parameters used in the optimization are 
 
 Note that the default values of the parameters, shown in the Table 1, have been tested and the results are outlined in the next section. These values are adequate for the test trade with CDX5 index pool as the underlying collateral pool. Any change to relax these parameter settings should be dealt with carefully and subject to testing. 
 
+Reference:
+
+https://finpricing.com/FinPricing-ProductBrochure.pdf
 
